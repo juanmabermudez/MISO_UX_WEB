@@ -1,0 +1,201 @@
+/* Base styles - Updated 2025-03-15 */
+:root {
+    --primary-color: #007AFF;
+    --secondary-color: #6B7280;
+    --background-color: #F3F4F6;
+    --text-color: #111827;
+    --border-color: #E5E7EB;
+    --card-background: #FFFFFF;
+    --color-red-50: #FEF2F2;
+    --color-red-200: #FECACA;
+    --color-red-600: #DC2626;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Header styles */
+.top-header {
+    background: var(--card-background);
+    border-bottom: 1px solid var(--border-color);
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.page-title-section {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    padding: 0.25rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.page-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    letter-spacing: -0.01em;
+    margin: 0;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.profile-image {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+button {
+    font: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Utility classes */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Focus styles */
+:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Footer styles */
+.footer {
+    background: var(--card-background);
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--secondary-color);
+    font-size: 0.875rem;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+    color: var(--text-color);
+}
+
+.separator {
+    color: var(--secondary-color);
+}
+
+.copyright {
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .separator {
+        display: none;
+    }
+
+    .copyright {
+        margin-top: 0.5rem;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .footer-links-group {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

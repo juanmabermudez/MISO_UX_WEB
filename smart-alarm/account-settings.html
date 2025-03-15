@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings - Smart Alarm</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/account-settings.css">
+</head>
+<body>
+    <header class="top-header">
+        <div class="header-container">
+            <div class="header-content">
+                <div class="page-title-section">
+                    <button class="back-button" onclick="window.location.href='index.html'">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <h1 class="page-title">Account Settings</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="settings-page">
+        <div class="container">
+            <section class="settings-container">
+                <div class="profile-section">
+                    <div class="profile-info">
+                        <div class="avatar">
+                            <img 
+                                src="https://ui-avatars.com/api/?name=JM&background=007AFF&color=fff&size=96"
+                                alt="Juan Manuel"
+                            />
+                        </div>
+                        <h2>Juan Manuel</h2>
+                        <p class="email">juan.manuel@example.com</p>
+                        <div class="profile-actions">
+                            <a href="edit-profile.html" class="btn-primary">Edit Profile</a>
+                            <button class="btn-secondary">Deactivate</button>
+                        </div>
+                    </div>
+
+                    <div class="notification-preferences">
+                        <h2>Notification Preferences</h2>
+                        <div class="notification-item">
+                            <div class="notification-icon push">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor">
+                                    <path d="M10 2.5V4.16667M15.8333 7.5V12.5L17.5 15.8333H2.5L4.16667 12.5V7.5C4.16667 4.27834 6.77834 1.66667 10 1.66667C13.2217 1.66667 15.8333 4.27834 15.8333 7.5Z" />
+                                </svg>
+                            </div>
+                            <div class="notification-content">
+                                <h3>Push Notifications</h3>
+                                <p>Get instant alerts on your device</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+
+                        <div class="notification-item">
+                            <div class="notification-icon email">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor">
+                                    <path d="M2.5 6.66667L9.0755 11.0502C9.63533 11.4384 10.3647 11.4384 10.9245 11.0502L17.5 6.66667M3.33333 15.8333H16.6667C17.5871 15.8333 18.3333 15.0871 18.3333 14.1667V5.83333C18.3333 4.91286 17.5871 4.16667 16.6667 4.16667H3.33333C2.41286 4.16667 1.66667 4.91286 1.66667 5.83333V14.1667C1.66667 15.0871 2.41286 15.8333 3.33333 15.8333Z" />
+                                </svg>
+                            </div>
+                            <div class="notification-content">
+                                <h3>Email Notifications</h3>
+                                <p>Receive updates in your inbox</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+
+                        <div class="notification-item">
+                            <div class="notification-icon dnd">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor">
+                                    <path d="M5 10H15M10 18.3333C14.6024 18.3333 18.3333 14.6024 18.3333 10C18.3333 5.39763 14.6024 1.66667 10 1.66667C5.39763 1.66667 1.66667 5.39763 1.66667 10C1.66667 14.6024 5.39763 18.3333 10 18.3333Z" />
+                                </svg>
+                            </div>
+                            <div class="notification-content">
+                                <h3>Do Not Disturb</h3>
+                                <p>Pause all notifications</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links-group">
+                <nav class="footer-nav">
+                    <a href="#">Terms of Service</a>
+                    <span class="separator">·</span>
+                    <a href="#">Privacy Policy</a>
+                    <span class="separator">·</span>
+                    <span class="copyright">© 2025 Smart Alarm</span>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
